@@ -9,6 +9,7 @@
 /src/Popup/[Bb]uilds/
 /src/Popup/[Ll]ogs/
 /src/Popup/[Uu]ser[Ss]ettings/
+/src/Popup/.idea
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
