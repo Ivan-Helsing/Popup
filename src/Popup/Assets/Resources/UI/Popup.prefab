@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1985856135148151421}
   - component: {fileID: 678006174397816463}
   - component: {fileID: 2161761360301874679}
-  - component: {fileID: 4524666438807723479}
   - component: {fileID: 1831213808298372910}
+  - component: {fileID: 6437802405066227190}
   m_Layer: 5
   m_Name: Popup
   m_TagString: Untagged
@@ -86,23 +86,6 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 1
---- !u!114 &4524666438807723479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4472702811419718054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &1831213808298372910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,6 +96,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63a0a2a83306e494b875af1f4c2ed8a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6437802405066227190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4472702811419718054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aad7359982f42e493ff2e77b51037fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6498412518907517846
@@ -127,6 +122,7 @@ GameObject:
   - component: {fileID: 2323792130016135323}
   - component: {fileID: 6337775003093503762}
   - component: {fileID: 1439411117163017020}
+  - component: {fileID: 999830609448649117}
   m_Layer: 5
   m_Name: Container
   m_TagString: Untagged
@@ -217,3 +213,15 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &999830609448649117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6498412518907517846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3b0eecd38f4237aed8f9c2056a2828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
