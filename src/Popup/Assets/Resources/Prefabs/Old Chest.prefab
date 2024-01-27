@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 936726435520118136}
   - component: {fileID: 7626814186865638041}
+  - component: {fileID: 6289740991038006270}
+  - component: {fileID: 6132395223328391253}
   m_Layer: 0
   m_Name: Old Chest
   m_TagString: Untagged
@@ -55,6 +57,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0.525573, z: 1}
   m_Center: {x: 0, y: 0.23721348, z: 0}
+--- !u!114 &6289740991038006270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555133621666883522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630beef7633d4ffca9d0b5f4e6ca177f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HintList:
+  - {fileID: 4431957780120362504, guid: ca0f56a742783c649b6739b43371bfa5, type: 3}
+--- !u!114 &6132395223328391253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555133621666883522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7897119eb46577444ba1e4042d287e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popupRoot: {fileID: 936726435520118136}
 --- !u!1 &2926320452223950100
 GameObject:
   m_ObjectHideFlags: 0

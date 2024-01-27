@@ -176,6 +176,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3661859901670608709}
   - component: {fileID: 5723312409250853879}
+  - component: {fileID: 2400928405173673154}
+  - component: {fileID: 26026424843049570}
   m_Layer: 0
   m_Name: Gold Chest
   m_TagString: Untagged
@@ -221,3 +223,32 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0.8074212, z: 1}
   m_Center: {x: 0, y: 0.37524927, z: 0}
+--- !u!114 &2400928405173673154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4150729518734284287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630beef7633d4ffca9d0b5f4e6ca177f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HintList:
+  - {fileID: 800881178551826867, guid: 568170074faa38246ab7fcb2df98288c, type: 3}
+  - {fileID: 5772423551833349290, guid: 004cca30ae5cf9e4b87587680917ed56, type: 3}
+  - {fileID: 4431957780120362504, guid: ca0f56a742783c649b6739b43371bfa5, type: 3}
+--- !u!114 &26026424843049570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4150729518734284287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7897119eb46577444ba1e4042d287e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popupRoot: {fileID: 3661859901670608709}

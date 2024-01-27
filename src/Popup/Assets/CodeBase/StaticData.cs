@@ -6,8 +6,6 @@ namespace CodeBase
   public class StaticData : MonoBehaviour
   {
     public List<GameObject> HintList = new();
-    
-    
   }
   
   

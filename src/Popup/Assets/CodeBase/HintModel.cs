@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using CodeBase.Services;
 using UnityEngine;
 
 namespace CodeBase
@@ -26,10 +27,14 @@ namespace CodeBase
           if (hit.collider.GetComponent<HintPresenter>() != null)
           {
             HintPresenter presenter = hit.collider.GetComponent<HintPresenter>();
+            if(presenter.isHintVisible)
+              return;
 
             List<GameObject> hintList = presenter.GetComponent<StaticData>().HintList;
 
-            _factory.CreateHint(hintList, presenter.transform);
+            var hint = _factory.CreateHint(hintList, presenter.transform);
+
+            presenter.Show(hint);
           }
         }
       }
