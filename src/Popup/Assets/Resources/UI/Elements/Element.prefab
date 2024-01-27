@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 8362525270198954622}
   - component: {fileID: 7944343127281368708}
   - component: {fileID: 2466960241477424423}
+  - component: {fileID: 8745454966696908151}
   m_Layer: 5
-  m_Name: Heart
+  m_Name: Element
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a9c30325be8f92346aeaa62b72a34dc9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 08c171b81836afa49b7a58c5e088c473, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -96,3 +97,15 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &8745454966696908151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800881178551826867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0512066b203f49aa97c4be62e2b6099d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

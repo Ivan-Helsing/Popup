@@ -2,8 +2,7 @@
 
 namespace CodeBase
 {
-  public class SizeProvider : MonoBehaviour
+  public class HintTransform : MonoBehaviour
   {
-    
   }
 }

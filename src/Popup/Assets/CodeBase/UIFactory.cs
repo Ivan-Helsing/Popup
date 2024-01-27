@@ -5,15 +5,34 @@ namespace CodeBase
 {
   public class UIFactory
   {
-    public void CreatePopup(List<GameObject> items, GameObject popup, Transform transform)
+    private readonly IAssetProvider _assets;
+
+    public UIFactory(IAssetProvider assets)
     {
-      var parent = Object.Instantiate(popup, transform);
+      _assets = assets;
+    }
+
+    public GameObject CreateHint(List<Sprite> items, Transform transform)
+    {
+      var parent = Object.Instantiate(_assets.HintContainer(), transform);
+      int elementsInHint = 0;
       
       foreach (var gameObject in items)
       {
-        Object.Instantiate(gameObject, parent.GetComponentInChildren<Container>().ContainerTransform());
+        Object.Instantiate(gameObject, parent.GetComponentInChildren<Container>().ContainerTransform);
+        elementsInHint++;
       }
-      parent.GetComponent<SetSelfSize>().SetSize(items);
+      
+      SetHintSize(parent, elementsInHint);
+      
+      return parent;
+    }
+
+    private void SetHintSize(GameObject parent, int hintSizeX)
+    {
+      var hintSize = parent.GetComponent<HintPanel>().GetComponent<RectTransform>().sizeDelta;
+      
+      hintSize = new Vector2(hintSizeX, hintSize.y);
     }
   }
 }

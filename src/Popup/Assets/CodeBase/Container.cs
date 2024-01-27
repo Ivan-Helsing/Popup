@@ -4,7 +4,6 @@ namespace CodeBase
 {
   public class Container : MonoBehaviour
   {
-    public Transform ContainerTransform() => 
-      gameObject.transform;
+    public Transform ContainerTransform => gameObject.transform;
   }
 }

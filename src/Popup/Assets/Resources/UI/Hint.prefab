@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 1985856135148151421}
   - component: {fileID: 678006174397816463}
   - component: {fileID: 2161761360301874679}
+  - component: {fileID: -6433863716090096930}
   - component: {fileID: 1831213808298372910}
-  - component: {fileID: 6437802405066227190}
+  - component: {fileID: 7503105226824666303}
   m_Layer: 5
-  m_Name: Popup
+  m_Name: Hint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,6 +87,18 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 1
+--- !u!225 &-6433863716090096930
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4472702811419718054}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &1831213808298372910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63a0a2a83306e494b875af1f4c2ed8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6437802405066227190
+--- !u!114 &7503105226824666303
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,7 +120,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4472702811419718054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aad7359982f42e493ff2e77b51037fd, type: 3}
+  m_Script: {fileID: 11500000, guid: ace96189d6a14a4daa8ecb0928f00466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6498412518907517846
@@ -122,7 +135,7 @@ GameObject:
   - component: {fileID: 2323792130016135323}
   - component: {fileID: 6337775003093503762}
   - component: {fileID: 1439411117163017020}
-  - component: {fileID: 999830609448649117}
+  - component: {fileID: 4705749120240917854}
   m_Layer: 5
   m_Name: Container
   m_TagString: Untagged
@@ -213,7 +226,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &999830609448649117
+--- !u!114 &4705749120240917854
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

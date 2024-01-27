@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CodeBase
+namespace CodeBase.PopupComponents
 {
   public class LookAtCamera : MonoBehaviour
   {
