@@ -4,7 +4,10 @@ namespace CodeBase
 {
   public class HintPanel : MonoBehaviour
   {
-    public float Alpha() => 
-      GetComponent<CanvasGroup>().alpha;
+    public float HintAlpha
+    {
+      get => GetComponent<CanvasGroup>().alpha;
+      set => GetComponent<CanvasGroup>().alpha = value;
+    }
   }
 }
