@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CodeBase
+namespace CodeBase.HintComponents
 {
   public class HintTransform : MonoBehaviour
   {

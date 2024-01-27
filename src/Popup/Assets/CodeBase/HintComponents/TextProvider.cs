@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace CodeBase.PopupComponents
+namespace CodeBase.HintComponents
 {
   public class TextProvider : MonoBehaviour
   {

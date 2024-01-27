@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace CodeBase.PopupComponents
+namespace CodeBase.HintComponents
 {
   public class SpriteProvider : MonoBehaviour
   {

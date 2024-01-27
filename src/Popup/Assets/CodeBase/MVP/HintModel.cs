@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using CodeBase.HintComponents;
 using CodeBase.Services;
 using UnityEngine;
 
-namespace CodeBase
+namespace CodeBase.MVP
 {
   public class HintModel : MonoBehaviour
   {

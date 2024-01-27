@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace CodeBase
+namespace CodeBase.MVP
 {
   public class HintPresenter : MonoBehaviour
   {
