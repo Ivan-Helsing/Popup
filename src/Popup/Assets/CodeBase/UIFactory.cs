@@ -12,7 +12,7 @@ namespace CodeBase
       _assets = assets;
     }
 
-    public GameObject CreateHint(List<Sprite> items, Transform transform)
+    public GameObject CreateHint(List<GameObject> items, Transform transform)
     {
       var parent = Object.Instantiate(_assets.HintContainer(), transform);
       int elementsInHint = 0;
