@@ -1,24 +1,45 @@
 using System.Collections;
+using System.Collections.Generic;
+using CodeBase.Services;
 using UnityEngine;
 
 namespace CodeBase.MVP
 {
   public class HintPresenter : MonoBehaviour
   {
-    public bool isHintVisible = false;
-    
-    public void Show(GameObject hint)
+    private UIFactory _factory;
+
+    private void Start()
     {
-      hint.GetComponent<HintPanel>().HintAlpha = 0;
-      isHintVisible = true;
+      List<GameObject> hintsList = GetComponent<StaticData>().HintList;
+      
+      var hint = _factory.CreateHint(hintsList, gameObject.transform);
+
+      StartCoroutine(Show(hint));
+    }
+
+    public void Construct(UIFactory factory)
+    {
+      _factory = factory;
+    }
+
+    private IEnumerator Show(GameObject hint)
+    {
+      CanvasGroup hintPanel = hint.GetComponent<HintView>().HintCanvas;
+      hintPanel.alpha = 0;
+
+      yield return new WaitForSeconds(2f);
+      
       StartCoroutine(ShowAnimation(hint));
     }
 
     private IEnumerator ShowAnimation(GameObject hint)
     {
-      while (hint.GetComponent<HintPanel>().HintAlpha < 1)
+      CanvasGroup hintPanel = hint.GetComponent<HintView>().HintCanvas;
+      
+      while (hintPanel.alpha < 1)
       {
-        hint.GetComponent<HintPanel>().HintAlpha += 0.03f;
+        hintPanel.alpha += 0.03f;
         yield return new WaitForSeconds(0.03f);
       }
 
@@ -28,14 +49,19 @@ namespace CodeBase.MVP
     private IEnumerator HideAnimation(GameObject hint)
     {
       yield return new WaitForSeconds(3f);
+
+      CanvasGroup hintPanel = hint.GetComponent<HintView>().HintCanvas;
       
-      while (hint.GetComponent<HintPanel>().HintAlpha > 0)
+      while (hintPanel.alpha > 0)
       {
-        hint.GetComponent<HintPanel>().HintAlpha -= 0.03f;
+        hintPanel.alpha -= 0.03f;
         yield return new WaitForSeconds(0.07f);
       }
-      isHintVisible = false;
+      
+      DestroyPanel(hint);
     }
 
+    private void DestroyPanel(GameObject hint) => 
+      Destroy(hint);
   }
 }
